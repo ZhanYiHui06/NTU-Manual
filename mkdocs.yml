@@ -1,0 +1,95 @@
+# Project information
+site_name: NTU Manual  南通大学生存指南
+site_description: 
+site_author: Eric
+site_url: https://ntumanual.github.io/
+
+
+# Repository
+repo_name: 'NTUManual/NTUManual.github.io'
+repo_url: 'https://github.com/NTUManual/NTUManual.github.io/'
+
+# Copyright
+copyright: "Copyright &copy; 2024 - 2024 All NTUers"
+
+
+theme:
+  name: material
+  logo: 'images/ntumanual-logo.png'
+  
+  palette:
+    primary: 'deep purple'
+    accent: 'teal'
+
+  feature:
+    tabs: true
+
+  #font:
+    #text: 'Ubuntu'
+    #code: 'Ubuntu Mono'
+
+  favicon: 'assets/images/favicon.ico'
+
+  language: 'zh'
+
+
+# Customization
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/NTUManual'
+
+  search:
+    language: 'en, de, ru'
+
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: false
+  - toc:
+      permalink: true
+  - footnotes
+  - meta
+  - def_list
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_png
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist
+  - pymdownx.tilde
+
+extra_javascript:
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
+
+
+# Google Analytics
+google_analytics:
+  - "UA-156919721-1"
+  - "auto"
+
+edit_uri:
+
+plugins:
+  - search
+
+nav:
+  - NTU Manual  南通大学生存指南: 
+      - 项目概述: 介绍.md
+      - 安装 Mkdocs && Material: 安装 Mkdocs && Material.md
+      - 创建新项目: 创建新项目.md
+      - 配置 YAML 文件: 配置 YAML 文件.md
+      - 开发服务器并生成网页: 开发服务器并生成网页.md
+      - 将网页部署到 GitHub Pages: 将网页部署到 GitHub Pages.md
+      - Reference: Reference.md
